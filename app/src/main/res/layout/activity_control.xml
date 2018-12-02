@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#e91818"
+            android:layout_weight="1"
+            android:background="#f4d2d2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/On_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@drawable/onall" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@drawable/send" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/Off_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/offall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f4d2d2"
+            android:text="Thiết bị 1                      Thiết bị 2"
+            android:textAlignment="center"
+            android:textColor="#e91818"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:paddingBottom="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/hinh1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tb1off"
+            android:scaleType="fitCenter"
+             />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/hinh2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/tb2off" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f4d2d2"
+            android:text="Thiết bị 3                      Thiết bị 4"
+            android:textAlignment="center"
+            android:textColor="#e91818"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:paddingBottom="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/hinh3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/tb3off" />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/hinh4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/tb4off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#0a0909"
+            android:textColor="#fcfcfc"
+            android:layout_height="match_parent"
+            android:text="Hẹn giờ TB1" />
+
+        <ImageButton
+            android:id="@+id/speak"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@drawable/record"
+            />
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#0a0909"
+            android:textColor="#fcfcfc"
+            android:layout_height="match_parent"
+            android:text="Hẹn giờ TB2" />
+
+    </LinearLayout>
+
+</LinearLayout>

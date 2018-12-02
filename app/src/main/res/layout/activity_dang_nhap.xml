@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".dang_nhap">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="173dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tendangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="22dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#f4f1f1"
+        android:text="Tên đăng nhập :" />
+
+    <TextView
+        android:id="@+id/matkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tendangnhap"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#f4f1f1"
+        android:text="Mật khẩu :" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_password"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/tendangnhap" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#faf7f7"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/matkhau"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

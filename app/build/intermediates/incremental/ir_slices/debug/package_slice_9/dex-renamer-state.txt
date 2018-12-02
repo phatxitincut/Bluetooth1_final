@@ -1,0 +1,4 @@
+#Sun Dec 02 19:26:57 ICT 2018
+base.0=F\:\\BT_Android\\BaiMau\\Bluetooth1 (1)_mau\\Bluetooth1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex
